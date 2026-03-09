@@ -1,0 +1,28 @@
+using System;
+
+class Vehicle
+{
+    public string Brand = "Ford";
+    
+    public void Honk()
+    {
+        Console.WriteLine("Tuut, tuut!");
+    }
+}
+
+class Car : Vehicle
+{
+    public string ModelName = "Mustang";
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Car myCar = new Car();
+
+        myCar.Honk();
+
+        Console.WriteLine(myCar.Brand + " " + myCar.ModelName);
+    }
+}
